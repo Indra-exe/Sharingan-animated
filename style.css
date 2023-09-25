@@ -1,0 +1,52 @@
+body{
+    background-color: darkslategray;
+}
+.sharingan{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 4px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 40vh;
+    left: 40vw;
+}
+.sharingan:hover{
+    animation: Rotation 1s linear infinite;
+}
+
+.line{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    outline-style: solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle{
+    background-color: black;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    top: 20%;
+}
+.triangle{
+    background-color: black;
+    height: 18px;
+    width: 10px;
+    position: relative;
+    top: -9px;
+    left: 4px;
+    border-radius: 0% 145% 0% 90%;
+    transform: rotateZ(60deg) skewY(30deg);
+
+}
+
+/* ////////Rotation//////// */
+@keyframes Rotation {
+    to { transform: rotate(360deg);}
+    
+}
